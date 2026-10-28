@@ -1,0 +1,5 @@
+<resources>
+    <color name="ic_launcher_background">#16181D</color>
+    <!-- Pre-Compose window background = the dark hearth, so there's no light flash on launch. -->
+    <color name="fp_window_bg">#141317</color>
+</resources>

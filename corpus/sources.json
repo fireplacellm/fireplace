@@ -1,0 +1,41 @@
+{
+  "_comment": "Pinned public sources for every pack. Each is built from primary public sources by Fireplace's own corpus pipeline. dump_date + sha256 are filled when each pack is built (Phase 2).",
+  "format_version": 1,
+  "sources": {
+    "wikipedia": {
+      "origin": "https://dumps.wikimedia.org/other/cirrussearch/",
+      "dump_date": null,
+      "license": "CC BY-SA 4.0",
+      "builder": "corpus/build_wikipedia.py",
+      "notes": "English Wikipedia; chunked to ~250-word passages, FTS5 + int8 dense index. May trim to top-N% by pageviews for disk/speed headroom."
+    },
+    "places": {
+      "origin": "https://overturemaps.org/ + OpenStreetMap via Overpass",
+      "dump_date": null,
+      "license": "ODbL",
+      "builder": "corpus/build_places.py",
+      "notes": "POIs with diet/opening-hours tags; structured so place questions can be answered in code."
+    },
+    "travel": {
+      "origin": "https://dumps.wikimedia.org/ (Wikivoyage) + Wikidata",
+      "dump_date": null,
+      "license": "CC BY-SA 4.0 / CC0",
+      "builder": "corpus/build_travel.py",
+      "notes": "Wikivoyage guides + per-country facts (emergency numbers, plugs, currency)."
+    },
+    "first-aid": {
+      "origin": "https://dumps.wikimedia.org/ (Wikibooks) + MedlinePlus",
+      "dump_date": null,
+      "license": "CC BY-SA 4.0 / public domain",
+      "builder": "corpus/build_firstaid.py",
+      "notes": "First-aid procedures; shown verbatim where safety-critical."
+    },
+    "crypto": {
+      "origin": "EIPs/ERCs repo, consensus-specs, ethereum.org, NIST PQC",
+      "dump_date": null,
+      "license": "public domain / CC0 / permissive",
+      "builder": "corpus/build_crypto.py",
+      "notes": "Ethereum + post-quantum reference material (in the eval distribution)."
+    }
+  }
+}

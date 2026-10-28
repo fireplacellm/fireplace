@@ -1,0 +1,13 @@
+# Development question set — we tune on this. Mirrors the bounty's distribution
+# (travel, places, first-aid, crypto, synthesis/comparison/reasoning, not just recall).
+# Seed set; expand toward ~60 before Phase 3. One JSON object per line.
+{"id": "dev-001", "prompt": "I'm vegan and travelling to Lisbon. What are good neighbourhoods to find vegan food, and name a couple of specific places?", "category": "places"}
+{"id": "dev-002", "prompt": "Explain the difference between proof-of-work and proof-of-stake, and why Ethereum moved to proof-of-stake.", "category": "crypto"}
+{"id": "dev-003", "prompt": "Someone has a suspected snakebite on the leg while hiking. What should I do and what should I avoid?", "category": "first-aid"}
+{"id": "dev-004", "prompt": "Compare the climates of Reykjavik and Lisbon for a trip in March, and what to pack for each.", "category": "travel"}
+{"id": "dev-005", "prompt": "What is a post-quantum signature scheme, and which ones has NIST standardized?", "category": "crypto"}
+{"id": "dev-006", "prompt": "I have 3 days in Kyoto. Build a rough itinerary that minimises backtracking between major temples.", "category": "synthesis"}
+{"id": "dev-007", "prompt": "How do I convert 65 miles per hour to metres per second, step by step?", "category": "reasoning"}
+{"id": "dev-008", "prompt": "What are the emergency phone numbers in Portugal, and how do they differ from the EU-wide number?", "category": "travel"}
+{"id": "dev-009", "prompt": "Explain how an n-gram language model works and why it is cheap to run.", "category": "synthesis"}
+{"id": "dev-010", "prompt": "Why does altitude affect cooking times, and how should I adjust boiling pasta at 2500m?", "category": "reasoning"}

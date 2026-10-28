@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fireplace brand logo (nested glowing hearth arches), from docs/brand/fireplace-logo.svg.
+     VectorDrawable keeps it crisp at every size; the soft blur glow of the source SVG is
+     approximated by the per-arch gradients. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Outer hearth shell -->
+    <path android:pathData="M97 420V224C97 181.831 113.752 141.388 143.57 111.57C173.388 81.7517 213.831 65 256 65C298.169 65 338.612 81.7517 368.43 111.57C398.248 141.388 415 181.831 415 224V420C415 434 407.333 441 392 441H120C104.667 441 97 434 97 420Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="97" android:startY="65" android:endX="467.784" android:endY="378.589">
+                <item android:offset="0" android:color="#444951"/>
+                <item android:offset="0.4" android:color="#282B31"/>
+                <item android:offset="1" android:color="#171A21"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner shell -->
+    <path android:pathData="M148 435V236C148 207.357 159.379 179.886 179.632 159.632C199.886 139.379 227.357 128 256 128C284.643 128 312.114 139.379 332.368 159.632C352.621 179.886 364 207.357 364 236V435C364 439 361.333 441 356 441H156C150.667 441 148 439 148 435Z"
+        android:strokeColor="#A34B1A" android:strokeWidth="2">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="148" android:startY="128" android:endX="440.637" android:endY="329.947">
+                <item android:offset="0" android:color="#1D1C20"/>
+                <item android:offset="0.65" android:color="#39211B"/>
+                <item android:offset="1" android:color="#7E3512"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Ember arch -->
+    <path android:pathData="M184 421V273C184 253.904 191.586 235.591 205.088 222.088C218.591 208.586 236.904 201 256 201C275.096 201 293.409 208.586 306.912 222.088C320.414 235.591 328 253.904 328 273V421C328 425.667 325.333 428 320 428H192C186.667 428 184 425.667 184 421Z"
+        android:strokeColor="#FD8620" android:strokeWidth="2.5">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="184" android:startY="201" android:endX="184" android:endY="428">
+                <item android:offset="0" android:color="#713010"/>
+                <item android:offset="0.45" android:color="#BC4D13"/>
+                <item android:offset="0.83" android:color="#F47C17"/>
+                <item android:offset="1" android:color="#FF9C1D"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Bright flame -->
+    <path android:pathData="M207 409V305C207 292.004 212.162 279.541 221.352 270.352C230.541 261.162 243.004 256 256 256C268.996 256 281.459 261.162 290.648 270.352C299.838 279.541 305 292.004 305 305V409C305 413.667 303 416 299 416H213C209 416 207 413.667 207 409Z"
+        android:strokeColor="#FFBE37" android:strokeWidth="2">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="207" android:startY="256" android:endX="207" android:endY="416">
+                <item android:offset="0" android:color="#F46A12"/>
+                <item android:offset="0.55" android:color="#FF981B"/>
+                <item android:offset="1" android:color="#FFD34F"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- White-hot core -->
+    <path android:pathData="M228 395V333C228 325.574 230.95 318.452 236.201 313.201C241.452 307.95 248.574 305 256 305C263.426 305 270.548 307.95 275.799 313.201C281.05 318.452 284 325.574 284 333V395C284 399.667 281.667 402 277 402H235C230.333 402 228 399.667 228 395Z"
+        android:strokeColor="#FFF5B4" android:strokeWidth="1.7">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="228" android:startY="305" android:endX="228" android:endY="402">
+                <item android:offset="0" android:color="#FFF0A0"/>
+                <item android:offset="0.55" android:color="#FFF5C5"/>
+                <item android:offset="1" android:color="#FFFFFF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

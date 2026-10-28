@@ -1,0 +1,13 @@
+# HELD-OUT question set — SEALED. We never tune on this. The harness refuses to
+# score it unless it still matches questions/heldout.seal (sha256), so our
+# held-out numbers can be trusted not to be the product of overfitting.
+# To change this set you must re-seal intentionally (python -m harness --seal),
+# which is visible in git history. One JSON object per line.
+{"id": "ho-001", "prompt": "I'm in Porto with a nut allergy. How do I ask about allergens in Portuguese, and what local dishes commonly contain nuts?", "category": "travel"}
+{"id": "ho-002", "prompt": "Explain what a rollup is in Ethereum and the difference between optimistic and zk rollups.", "category": "crypto"}
+{"id": "ho-003", "prompt": "A hiker shows signs of hypothermia. Walk me through what to do first and the common mistakes.", "category": "first-aid"}
+{"id": "ho-004", "prompt": "Compare taking the train vs flying from Lisbon to Madrid: time, rough cost, and tradeoffs.", "category": "comparison"}
+{"id": "ho-005", "prompt": "What is the capital of Kazakhstan, when did it change names, and why?", "category": "recall"}
+{"id": "ho-006", "prompt": "Plan a vegetarian-friendly day of street food in Bangkok near the old city.", "category": "places"}
+{"id": "ho-007", "prompt": "How does a mixture-of-experts model reduce compute per token compared to a dense model of the same size?", "category": "reasoning"}
+{"id": "ho-008", "prompt": "If sunrise is 06:42 and sunset is 19:08, how much daylight is there, and what fraction of the day is that?", "category": "reasoning"}

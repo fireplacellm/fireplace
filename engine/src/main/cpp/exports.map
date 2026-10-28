@@ -1,0 +1,8 @@
+{
+  global:
+    Java_com_fireplace_engine_LlamaEngine_nativeLoad;
+    Java_com_fireplace_engine_LlamaEngine_nativeGenerate;
+    Java_com_fireplace_engine_LlamaEngine_nativeCancel;
+    Java_com_fireplace_engine_LlamaEngine_nativeFree;
+  local: *;
+};

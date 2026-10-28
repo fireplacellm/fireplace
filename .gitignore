@@ -1,0 +1,49 @@
+# Build
+/build/
+**/build/
+**/.cxx/
+.gradle/
+local.properties
+*.apk
+*.aab
+
+# Models, indexes, packs (never commit; fetch via scripts/fetch-assets.sh)
+*.gguf
+*.fpack
+*.onnx
+/corpus/out/
+/corpus/work/
+/models/
+/out/
+
+# Demo media (host on the launch post, not in git)
+*.mp4
+
+# Experiment run artifacts (keep RESULTS.md + the harness scripts, not the raw logs)
+*.log
+experiments/results_*.txt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Native
+engine/src/main/cpp/llama.cpp/
+*.so
+!app/src/main/jniLibs/**/placeholder
+
+# OS / editor
+.DS_Store
+.idea/
+*.iml
+.vscode/
+corpus/.signing_seed
+
+# Release signing secrets — never commit
+keystore.properties
+*.jks
+*.keystore
+corpus/.signing_seed

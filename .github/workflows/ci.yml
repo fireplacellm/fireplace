@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  offline-gate:
+    # The decisive, machine-checkable bounty requirement: no network access.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify no network permissions
+        run: bash scripts/verify_offline.sh
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Tests (eval harness, pack format, corpus, pipeline)
+        run: |
+          python -m unittest discover -s eval -p 'test_*.py' -v
+          python -m unittest discover -s corpus -p 'test_*.py' -v
+          python -m unittest discover -s pipeline -p 'test_*.py' -v
+      - name: Pipeline demo (end-to-end, no model)
+        run: python scripts/demo.py

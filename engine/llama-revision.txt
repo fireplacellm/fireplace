@@ -1,0 +1,4 @@
+# Pinned llama.cpp revision for the engine build. Chosen as the newest upstream
+# commit that (a) carries the GGUF/loader hardening we track, and (b) we have
+# validated on device. Update deliberately with a note here.
+revision = TBD
