@@ -6,7 +6,7 @@ Fireplace answers real research questions - explanation, comparison, synthesis, 
 
 Built for **[poidh bounty #31](https://poidh.xyz/mainnet/bounty/31)**, inspired by [Vitalik Buterin's post](https://x.com/VitalikButerin). The bar: an offline phone app that is **">50% as good as internet + frontier AI"** within a 12 GB-RAM, 50 GB-storage budget. Independent community bounty.
 
-**▶️ [60-second demo](docs/demo/DEMO.md)** - ask a question → instant cited answer → sources with the exact text → model catalogue → Deep Research, all offline.
+**▶️ [Watch the demo on X](https://x.com/fireplaceai/status/2114417769647345979)** - a question to an instant cited answer, sources with the exact text, the model catalogue, and Deep Research, all fully offline.
 
 ---
 
